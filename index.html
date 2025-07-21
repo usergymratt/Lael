@@ -13,46 +13,52 @@
             font-family: 'Poppins', sans-serif;
             background-color: #121212; /* Negro profundo */
         }
-      .font-serif {
+     .font-serif {
             font-family: 'Playfair Display', serif;
         }
-      .tab-button.active {
+     .tab-button.active {
             background-color: #DC2626; /* Rojo */
             color: white;
             font-weight: 600;
             transform: translateY(-2px);
             box-shadow: 0 4px 15px rgba(220, 38, 38, 0.3);
         }
-      .tab-button {
+     .tab-button {
             transition: all 0.3s ease-in-out;
             background-color: #282828; /* Gris oscuro */
             color: #E5E7EB; /* Gris claro */
         }
-      .tab-button:hover {
+     .tab-button:hover {
             background-color: #3f3f3f;
         }
-      .content-card {
+     .content-card {
             background-color: #1e1e1e; /* Gris casi negro */
             border-radius: 1rem;
             border: 1px solid #333;
         }
-      .exercise-card {
+     .exercise-card {
             background-color: #282828;
             border-radius: 0.75rem;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             overflow: hidden;
         }
-      .exercise-card:hover {
+     .exercise-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
         }
-      .section-title {
+     .section-title {
             color: #DC2626;
         }
-      .warmup-card {
+     .warmup-card {
             background-color: rgba(220, 38, 38, 0.1);
             border-left: 4px solid #DC2626;
             border-radius: 0.5rem;
+       }
+      .fundamentals-card {
+            background-color: #1e1e1e;
+            border-radius: 1rem;
+            border: 1px solid #333;
+            margin-bottom: 2rem;
        }
     </style>
 </head>
@@ -69,6 +75,25 @@
                 Una rutina intensa diseñada para maximizar el crecimiento de tus glúteos y esculpir tu cintura. ¡Es hora de construir tu mejor versión!
             </p>
         </header>
+
+        <div class="fundamentals-card p-6 md:p-8">
+            <h2 class="font-serif text-3xl text-center font-bold mb-4 text-white">La Base de Tu <span class="section-title">Transformación</span></h2>
+            <p class="text-center text-gray-400 mb-6">Antes de levantar una sola pesa, quiero que entiendas esto, porque aquí reside el verdadero poder. No se trata de seguir órdenes, sino de ser la dueña de tu proceso. Tu éxito se basa en tres pilares innegociables:</p>
+            <div class="grid md:grid-cols-3 gap-6 text-center">
+                <div class="bg-gray-800 p-4 rounded-lg">
+                    <h3 class="font-bold text-xl text-red-400 mb-2">1. El Reto Constante</h3>
+                    <p class="text-sm text-gray-300">Tus músculos no crecen por casualidad, crecen porque los retas. Cada semana, debes intentar un poquito más: una repetición extra, un poco más de peso, una técnica más perfecta. A esto se le llama <span class="font-semibold">sobrecarga progresiva</span>. Es como subir de nivel en un juego. Si no hay reto, no hay cambio. [1, 2]</p>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-lg">
+                    <h3 class="font-bold text-xl text-red-400 mb-2">2. La Comida es Poder</h3>
+                    <p class="text-sm text-gray-300">Olvídate de las dietas restrictivas. Para construir músculo, necesitas comer. La comida es la gasolina para tus entrenamientos y los ladrillos para construir tus glúteos. Necesitas <span class="font-semibold">suficiente proteína y energía</span> para que tu cuerpo tenga con qué trabajar. La comida es tu aliada, no tu enemiga.</p>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-lg">
+                    <h3 class="font-bold text-xl text-red-400 mb-2">3. La Magia del Descanso</h3>
+                    <p class="text-sm text-gray-300">No creces en el gimnasio, creces mientras duermes. El descanso es sagrado. Es durante la noche cuando tu cuerpo repara las fibras musculares y las hace más fuertes y grandes. Dormir bien no es negociable, es la <span class="font-semibold">fase más importante</span> de tu transformación. [3, 4, 5]</p>
+                </div>
+            </div>
+        </div>
 
         <div class="mb-8">
             <div id="tabs" class="grid grid-cols-3 md:grid-cols-6 gap-3 md:gap-4 text-center">
@@ -89,10 +114,10 @@
                 <div class="warmup-card p-4 mb-6">
                     <h4 class="font-bold text-lg text-red-400 mb-2">Calentamiento Dinámico (5-10 min)</h4>
                     <ul class="list-disc list-inside text-gray-300 text-sm space-y-1">
-                        <li><strong>Círculos de brazos:</strong> 30 segundos hacia adelante y 30 hacia atrás.</li>
-                        <li><strong>Círculos de cadera:</strong> 30 segundos hacia cada lado.</li>
-                        <li><strong>Balanceo de piernas:</strong> 12 balanceos hacia adelante y 12 hacia el lado con cada pierna.</li>
+                        <li><strong>Círculos de cadera:</strong> 30 segundos hacia cada lado para lubricar la articulación. [6]</li>
+                        <li><strong>Balanceo de piernas:</strong> 12 balanceos hacia adelante y 12 hacia el lado con cada pierna. [6]</li>
                         <li><strong>Sentadillas sin peso:</strong> 2 series de 15 repeticiones para activar el patrón de movimiento.</li>
+                        <li><strong>Puentes de glúteo sin peso:</strong> 2 series de 20 repeticiones, apretando 2 segundos arriba. [7]</li>
                     </ul>
                 </div>
 
@@ -100,20 +125,20 @@
                     <div class="exercise-card p-4">
                         <h4 class="font-bold text-xl text-white">1. Hip Thrust con Peso</h4>
                         <p class="font-semibold text-red-400 mb-2">4 series de 8-12 reps | 90 seg. descanso</p>
-                        <p class="text-gray-400 text-sm mb-2"><strong>Cómo hacerlo:</strong> Apoya la parte alta de tu espalda en un banco. Coloca una mancuerna o barra sobre tu cadera. Con los pies firmes en el suelo, empuja la cadera hacia el techo hasta que tu cuerpo forme una línea recta. Aprieta los glúteos con todas tus fuerzas en la cima y baja de forma controlada.</p>
-                        <p class="text-gray-300 text-sm"><strong>Enfoque:</strong> Mantén la barbilla ligeramente hacia el pecho y haz una pausa de 2 segundos arriba para una contracción máxima.</p>
+                        <p class="text-gray-400 text-sm mb-2"><strong>Cómo hacerlo:</strong> Apoya la parte alta de tu espalda en un banco. Coloca una mancuerna o barra sobre tu cadera. Con los pies firmes en el suelo, empuja la cadera hacia el techo hasta que tu cuerpo forme una línea recta. Aprieta los glúteos con todas tus fuerzas en la cima y baja de forma controlada. [8]</p>
+                        <p class="text-gray-300 text-sm"><strong>Enfoque:</strong> Mantén la barbilla ligeramente hacia el pecho y haz una pausa de 2 segundos arriba para una contracción máxima. [9]</p>
                     </div>
                     <div class="exercise-card p-4">
                         <h4 class="font-bold text-xl text-white">2. Peso Muerto Rumano con Mancuernas</h4>
                         <p class="font-semibold text-red-400 mb-2">4 series de 10-12 reps | 75 seg. descanso</p>
-                        <p class="text-gray-400 text-sm mb-2"><strong>Cómo hacerlo:</strong> De pie, sostén las mancuernas frente a tus muslos. Con las rodillas ligeramente flexionadas y la espalda recta, empuja la cadera hacia atrás como si quisieras tocar una pared. Baja las pesas cerca de tus piernas hasta sentir un buen estiramiento en los femorales. Sube contrayendo los glúteos.</p>
-                        <p class="text-gray-300 text-sm"><strong>Enfoque:</strong> El movimiento es una bisagra de cadera, no una sentadilla. La espalda debe permanecer recta.</p>
+                        <p class="text-gray-400 text-sm mb-2"><strong>Cómo hacerlo:</strong> De pie, sostén las mancuernas frente a tus muslos. Con las rodillas ligeramente flexionadas y la espalda recta, empuja la cadera hacia atrás como si quisieras tocar una pared. Baja las pesas cerca de tus piernas hasta sentir un buen estiramiento en los femorales. Sube contrayendo los glúteos. [10]</p>
+                        <p class="text-gray-300 text-sm"><strong>Enfoque:</strong> El movimiento es una bisagra de cadera, no una sentadilla. La espalda debe permanecer recta. [7]</p>
                     </div>
                     <div class="exercise-card p-4">
                         <h4 class="font-bold text-xl text-white">3. Sentadilla Búlgara</h4>
                         <p class="font-semibold text-red-400 mb-2">3 series de 10-12 reps por pierna | 60 seg. descanso</p>
-                        <p class="text-gray-400 text-sm mb-2"><strong>Cómo hacerlo:</strong> Coloca el empeine de un pie en un banco detrás de ti. Sostén mancuernas a los lados. Baja lentamente hasta que tu rodilla trasera casi toque el suelo. La rodilla delantera debe permanecer alineada con el tobillo. Empuja con el talón delantero para subir.</p>
-                        <p class="text-gray-300 text-sm"><strong>Enfoque:</strong> Inclina ligeramente el torso hacia adelante para poner más énfasis en el glúteo de la pierna de apoyo.</p>
+                        <p class="text-gray-400 text-sm mb-2"><strong>Cómo hacerlo:</strong> Coloca el empeine de un pie en un banco detrás de ti. Sostén mancuernas a los lados. Baja lentamente hasta que tu rodilla trasera casi toque el suelo. La rodilla delantera debe permanecer alineada con el tobillo. Empuja con el talón delantero para subir. [2]</p>
+                        <p class="text-gray-300 text-sm"><strong>Enfoque:</strong> Inclina ligeramente el torso hacia adelante para poner más énfasis en el glúteo de la pierna de apoyo. [11]</p>
                     </div>
                 </div>
             </div>
@@ -125,10 +150,10 @@
                 <div class="warmup-card p-4 mb-6">
                     <h4 class="font-bold text-lg text-red-400 mb-2">Calentamiento Dinámico (5-10 min)</h4>
                     <ul class="list-disc list-inside text-gray-300 text-sm space-y-1">
-                        <li><strong>Círculos de brazos:</strong> 30 segundos hacia adelante y 30 hacia atrás.</li>
+                        <li><strong>Círculos de brazos:</strong> 30 segundos hacia adelante y 30 hacia atrás. [6]</li>
                         <li><strong>Rotaciones de torso:</strong> 15 giros suaves a cada lado.</li>
                         <li><strong>Gato-Vaca:</strong> 10 repeticiones para movilizar la columna.</li>
-                        <li><strong>Flexiones inclinadas (contra la pared):</strong> 2 series de 12 repeticiones.</li>
+                        <li><strong>Flexiones inclinadas (contra la pared):</strong> 2 series de 12 repeticiones. [12]</li>
                     </ul>
                 </div>
 
@@ -136,20 +161,20 @@
                     <div class="exercise-card p-4">
                         <h4 class="font-bold text-xl text-white">1. Remo con Mancuerna</h4>
                         <p class="font-semibold text-red-400 mb-2">4 series de 10-12 reps por brazo | 60 seg. descanso</p>
-                        <p class="text-gray-400 text-sm mb-2"><strong>Cómo hacerlo:</strong> Apoya una rodilla y una mano en un banco. Con la espalda recta, jala la mancuerna hacia tu cadera, manteniendo el codo cerca del cuerpo. Concéntrate en usar los músculos de la espalda para levantar el peso. Baja de forma controlada.</p>
-                        <p class="text-gray-300 text-sm"><strong>Enfoque:</strong> Imagina que quieres guardar la mancuerna en el bolsillo trasero de tu pantalón.</p>
+                        <p class="text-gray-400 text-sm mb-2"><strong>Cómo hacerlo:</strong> Apoya una rodilla y una mano en un banco. Con la espalda recta, jala la mancuerna hacia tu cadera, manteniendo el codo cerca del cuerpo. Concéntrate en usar los músculos de la espalda para levantar el peso. Baja de forma controlada. [13]</p>
+                        <p class="text-gray-300 text-sm"><strong>Enfoque:</strong> Imagina que quieres guardar la mancuerna en el bolsillo trasero de tu pantalón. [14]</p>
                     </div>
                     <div class="exercise-card p-4">
                         <h4 class="font-bold text-xl text-white">2. Press de Hombro Sentada</h4>
                         <p class="font-semibold text-red-400 mb-2">4 series de 10-12 reps | 75 seg. descanso</p>
-                        <p class="text-gray-400 text-sm mb-2"><strong>Cómo hacerlo:</strong> Sentada con la espalda apoyada, sostén las mancuernas a la altura de los hombros. Empuja hacia arriba hasta extender los brazos, sin chocar las pesas. Baja de forma controlada.</p>
-                        <p class="text-gray-300 text-sm"><strong>Enfoque:</strong> Mantén el core apretado para no arquear la espalda.</p>
+                        <p class="text-gray-400 text-sm mb-2"><strong>Cómo hacerlo:</strong> Sentada con la espalda apoyada, sostén las mancuernas a la altura de los hombros. Empuja hacia arriba hasta extender los brazos, sin chocar las pesas. Baja de forma controlada. [15]</p>
+                        <p class="text-gray-300 text-sm"><strong>Enfoque:</strong> Mantén el core apretado para no arquear la espalda. [16]</p>
                     </div>
                     <div class="exercise-card p-4">
                         <h4 class="font-bold text-xl text-white">3. Giros Rusos con Peso</h4>
                         <p class="font-semibold text-red-400 mb-2">3 series de 15-20 reps por lado | 45 seg. descanso</p>
-                        <p class="text-gray-400 text-sm mb-2"><strong>Cómo hacerlo:</strong> Siéntate, inclina el torso hacia atrás y levanta los pies del suelo (o apóyalos si necesitas más estabilidad). Sostén una pesa y gira el torso de lado a lado, llevando la pesa hacia el suelo a cada lado de tu cadera.</p>
-                        <p class="text-gray-300 text-sm"><strong>Enfoque:</strong> El giro debe venir de tu cintura, no de tus brazos. Mantén el abdomen apretado.</p>
+                        <p class="text-gray-400 text-sm mb-2"><strong>Cómo hacerlo:</strong> Siéntate, inclina el torso hacia atrás y levanta los pies del suelo (o apóyalos si necesitas más estabilidad). Sostén una pesa y gira el torso de lado a lado, llevando la pesa hacia el suelo a cada lado de tu cadera. [17]</p>
+                        <p class="text-gray-300 text-sm"><strong>Enfoque:</strong> El giro debe venir de tu cintura, no de tus brazos. Mantén el abdomen apretado. [18]</p>
                     </div>
                 </div>
             </div>
@@ -161,10 +186,10 @@
                 <div class="warmup-card p-4 mb-6">
                     <h4 class="font-bold text-lg text-red-400 mb-2">Calentamiento Dinámico (5-10 min)</h4>
                     <ul class="list-disc list-inside text-gray-300 text-sm space-y-1">
-                        <li><strong>Círculos de cadera:</strong> 30 segundos hacia cada lado.</li>
-                        <li><strong>Balanceo de piernas:</strong> 12 balanceos hacia adelante y 12 hacia el lado con cada pierna.</li>
+                        <li><strong>Círculos de cadera:</strong> 30 segundos hacia cada lado. [6]</li>
+                        <li><strong>Balanceo de piernas:</strong> 12 balanceos hacia adelante y 12 hacia el lado con cada pierna. [6]</li>
                         <li><strong>Sentadillas sin peso:</strong> 2 series de 15 repeticiones.</li>
-                        <li><strong>Puentes de glúteo sin peso:</strong> 2 series de 20 repeticiones, apretando arriba.</li>
+                        <li><strong>Puentes de glúteo sin peso:</strong> 2 series de 20 repeticiones, apretando arriba. [7]</li>
                     </ul>
                 </div>
 
@@ -172,19 +197,19 @@
                     <div class="exercise-card p-4">
                         <h4 class="font-bold text-xl text-white">1. Sentadilla Goblet</h4>
                         <p class="font-semibold text-red-400 mb-2">4 series de 12-15 reps | 75 seg. descanso</p>
-                        <p class="text-gray-400 text-sm mb-2"><strong>Cómo hacerlo:</strong> Sostén una mancuerna verticalmente contra tu pecho. Con los pies un poco más anchos que los hombros, baja la cadera profundo, manteniendo la espalda recta. Empuja con los talones para subir.</p>
+                        <p class="text-gray-400 text-sm mb-2"><strong>Cómo hacerlo:</strong> Sostén una mancuerna verticalmente contra tu pecho. Con los pies un poco más anchos que los hombros, baja la cadera profundo, manteniendo la espalda recta. Empuja con los talones para subir. [19, 20]</p>
                         <p class="text-gray-300 text-sm"><strong>Enfoque:</strong> Baja lento y controlado, siente el estiramiento en los glúteos en la parte inferior.</p>
                     </div>
                     <div class="exercise-card p-4">
                         <h4 class="font-bold text-xl text-white">2. Zancadas (Lunges)</h4>
                         <p class="font-semibold text-red-400 mb-2">3 series de 12-15 reps por pierna | 60 seg. descanso</p>
-                        <p class="text-gray-400 text-sm mb-2"><strong>Cómo hacerlo:</strong> Da un paso largo hacia adelante. Baja hasta que ambas rodillas estén a 90 grados. Para enfocar más en el glúteo, inclina ligeramente tu torso hacia adelante sobre la pierna delantera. Empuja con el talón delantero para volver.</p>
-                        <p class="text-gray-300 text-sm"><strong>Enfoque:</strong> La clave para el glúteo es el paso largo y la ligera inclinación del torso.</p>
+                        <p class="text-gray-400 text-sm mb-2"><strong>Cómo hacerlo:</strong> Da un paso largo hacia adelante. Baja hasta que ambas rodillas estén a 90 grados. Para enfocar más en el glúteo, inclina ligeramente tu torso hacia adelante sobre la pierna delantera. Empuja con el talón delantero para volver. [21]</p>
+                        <p class="text-gray-300 text-sm"><strong>Enfoque:</strong> La clave para el glúteo es el paso largo y la ligera inclinación del torso. [22]</p>
                     </div>
                     <div class="exercise-card p-4">
                         <h4 class="font-bold text-xl text-white">3. Step-Ups en Banco con Peso</h4>
                         <p class="font-semibold text-red-400 mb-2">3 series de 12-15 reps por pierna | 60 seg. descanso</p>
-                        <p class="text-gray-400 text-sm mb-2"><strong>Cómo hacerlo:</strong> De pie frente a un banco, sostén mancuernas. Sube una pierna al banco y empuja con el talón para elevar todo tu cuerpo. La pierna de abajo debe hacer el mínimo esfuerzo. Baja de forma controlada.</p>
+                        <p class="text-gray-400 text-sm mb-2"><strong>Cómo hacerlo:</strong> De pie frente a un banco, sostén mancuernas. Sube una pierna al banco y empuja con el talón para elevar todo tu cuerpo. La pierna de abajo debe hacer el mínimo esfuerzo. Baja de forma controlada. [23]</p>
                         <p class="text-gray-300 text-sm"><strong>Enfoque:</strong> Concéntrate en el glúteo de la pierna que está sobre el banco para hacer todo el trabajo.</p>
                     </div>
                 </div>
@@ -197,10 +222,10 @@
                 <div class="warmup-card p-4 mb-6">
                     <h4 class="font-bold text-lg text-red-400 mb-2">Calentamiento Dinámico (5-10 min)</h4>
                     <ul class="list-disc list-inside text-gray-300 text-sm space-y-1">
-                        <li><strong>Círculos de brazos:</strong> 30 segundos hacia adelante y 30 hacia atrás.</li>
+                        <li><strong>Círculos de brazos:</strong> 30 segundos hacia adelante y 30 hacia atrás. [6]</li>
                         <li><strong>Rotaciones de hombros:</strong> 15 rotaciones suaves hacia atrás y 15 hacia adelante.</li>
                         <li><strong>Elevaciones laterales sin peso:</strong> 2 series de 20 repeticiones para bombear sangre a los deltoides.</li>
-                        <li><strong>Plancha abdominal:</strong> 2 series de 30 segundos.</li>
+                        <li><strong>Plancha abdominal:</strong> 2 series de 30 segundos. [24]</li>
                     </ul>
                 </div>
 
@@ -214,14 +239,14 @@
                     <div class="exercise-card p-4">
                         <h4 class="font-bold text-xl text-white">2. Flexiones (la variación que puedas)</h4>
                         <p class="font-semibold text-red-400 mb-2">3 series al fallo (hasta que no puedas más) | 75 seg. descanso</p>
-                        <p class="text-gray-400 text-sm mb-2"><strong>Cómo hacerlo:</strong> Coloca las manos un poco más anchas que los hombros. Baja el pecho hacia el suelo manteniendo el cuerpo en una línea recta. Si es muy difícil, apoya las rodillas o hazlas inclinadas contra una silla.</p>
+                        <p class="text-gray-400 text-sm mb-2"><strong>Cómo hacerlo:</strong> Coloca las manos un poco más anchas que los hombros. Baja el pecho hacia el suelo manteniendo el cuerpo en una línea recta. Si es muy difícil, apoya las rodillas o hazlas inclinadas contra una silla. [25, 12]</p>
                         <p class="text-gray-300 text-sm"><strong>Enfoque:</strong> El pecho debe casi tocar el suelo. Controla la bajada.</p>
                     </div>
                     <div class="exercise-card p-4">
                         <h4 class="font-bold text-xl text-white">3. Elevación de Piernas Acostada</h4>
                         <p class="font-semibold text-red-400 mb-2">3 series de 15-20 reps | 45 seg. descanso</p>
-                        <p class="text-gray-400 text-sm mb-2"><strong>Cómo hacerlo:</strong> Acuéstate boca arriba, con las manos debajo de los glúteos para apoyar la espalda baja. Levanta las piernas rectas hasta que queden perpendiculares al suelo. Bájalas lentamente sin que toquen el suelo.</p>
-                        <p class="text-gray-300 text-sm"><strong>Enfoque:</strong> Mantén la espalda baja pegada al suelo en todo momento.</p>
+                        <p class="text-gray-400 text-sm mb-2"><strong>Cómo hacerlo:</strong> Acuéstate boca arriba, con las manos debajo de los glúteos para apoyar la espalda baja. Levanta las piernas rectas hasta que queden perpendiculares al suelo. Bájalas lentamente sin que toquen el suelo. [26]</p>
+                        <p class="text-gray-300 text-sm"><strong>Enfoque:</strong> Mantén la espalda baja pegada al suelo en todo momento. [27]</p>
                     </div>
                 </div>
             </div>
@@ -233,7 +258,7 @@
                 <div class="warmup-card p-4 mb-6">
                     <h4 class="font-bold text-lg text-red-400 mb-2">Calentamiento Dinámico (5-10 min)</h4>
                     <ul class="list-disc list-inside text-gray-300 text-sm space-y-1">
-                        <li><strong>Puentes de glúteo sin peso:</strong> 2 series de 25 repeticiones.</li>
+                        <li><strong>Puentes de glúteo sin peso:</strong> 2 series de 25 repeticiones. [7]</li>
                         <li><strong>Abducción de cadera acostada:</strong> 2 series de 20 reps por lado.</li>
                         <li><strong>Patadas de glúteo sin peso:</strong> 2 series de 20 reps por lado.</li>
                         <li><strong>Caminata de monstruo con banda (si tienes):</strong> 2 series de 15 pasos por lado.</li>
@@ -244,7 +269,7 @@
                     <div class="exercise-card p-4">
                         <h4 class="font-bold text-xl text-white">1. Puente de Glúteo con Peso</h4>
                         <p class="font-semibold text-red-400 mb-2">4 series de 15-20 reps | 60 seg. descanso</p>
-                        <p class="text-gray-400 text-sm mb-2"><strong>Cómo hacerlo:</strong> Acostada en el suelo, con las rodillas dobladas. Coloca una pesa sobre tu cadera. Eleva la cadera apretando los glúteos con fuerza. Haz una pausa de 2 segundos arriba y baja lentamente.</p>
+                        <p class="text-gray-400 text-sm mb-2"><strong>Cómo hacerlo:</strong> Acostada en el suelo, con las rodillas dobladas. Coloca una pesa sobre tu cadera. Eleva la cadera apretando los glúteos con fuerza. Haz una pausa de 2 segundos arriba y baja lentamente. [28]</p>
                         <p class="text-gray-300 text-sm"><strong>Enfoque:</strong> Concéntrate en la contracción máxima en la parte superior. ¡Que queme!</p>
                     </div>
                     <div class="exercise-card p-4">
@@ -257,7 +282,7 @@
                         <h4 class="font-bold text-xl text-white">3. Abducción de Cadera Sentada (con banda)</h4>
                         <p class="font-semibold text-red-400 mb-2">3 series de 25-30 reps | 45 seg. descanso</p>
                         <p class="text-gray-400 text-sm mb-2"><strong>Cómo hacerlo:</strong> Siéntate en el borde de un banco con una banda de resistencia por encima de las rodillas. Inclina el torso hacia adelante y separa las rodillas contra la resistencia de la banda. Vuelve lentamente a la posición inicial.</p>
-                        <p class="text-gray-300 text-sm"><strong>Enfoque:</strong> Este es para el "burnout" final. Mantén la tensión constante en la banda.</p>
+                        <p class="text-gray-300 text-sm"><strong>Enfoque:</strong> Este es para el "burnout" final. Mantén la tensión constante en la banda. [7]</p>
                     </div>
                 </div>
             </div>
@@ -270,7 +295,7 @@
                         <h4 class="font-bold text-xl text-red-400 mb-3">Tus Nuevos Objetivos Diarios</h4>
                         <p class="text-gray-300">Aumentaremos ligeramente las calorías para dar a tu cuerpo los "ladrillos" extra que necesita. Un buen punto de partida es apuntar a unas <strong>2000-2100 kcal</strong> al día. Lo más importante es:</p>
                         <ul class="list-disc list-inside text-gray-300 space-y-2 mt-4">
-                            <li><strong>Proteína (1.6g por kg de peso):</strong> Sigue siendo la reina. Apunta a unos <strong>85-90g</strong> diarios. Es esencial para reparar y construir las fibras musculares.</li>
+                            <li><strong>Proteína (1.6g por kg de peso):</strong> Sigue siendo la reina. Apunta a unos <strong>85-90g</strong> diarios. Es esencial para reparar y construir las fibras musculares. [29, 30]</li>
                             <li><strong>Carbohidratos:</strong> ¡No les temas! Son tu principal fuente de energía para entrenar duro. Aumentaremos su consumo con fuentes como arroz, papa, avena y frutas.</li>
                             <li><strong>Grasas Saludables:</strong> Fundamentales para tus hormonas. Aguacate, frutos secos y aceite de oliva son tus mejores amigos.</li>
                         </ul>
@@ -284,7 +309,7 @@
                             </div>
                             <div class="bg-gray-900 p-4 rounded-md">
                                 <h5 class="font-bold text-white">Almuerzo</h5>
-                                <p class="text-gray-400">Buena porción de pechuga de pollo o muslos, 1 taza y media de arroz, y una ensalada grande con aguacate.</p>
+                                <p class="text-gray-400">Buena porción de pechuga de pollo o muslos, 1 taza y media de arroz, y una ensalada grande con aguacate. [31]</p>
                             </div>
                             <div class="bg-gray-900 p-4 rounded-md">
                                 <h5 class="font-bold text-white">Cena</h5>
